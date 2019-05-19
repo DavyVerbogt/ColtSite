@@ -107,14 +107,30 @@
                     </div>
                     <div class="social" id="contact">
                         <p class ="social_icon">
-							<img src="images/discord-logo-bss.png" width="100" alt=""
-                                    class="thumbnail"/>
+							  <button onclick="document.getElementById('id01').style.display='block'" style="background-color: #414141;"><img src="images/discord-logo-bss.png" width="100" alt=""
+                                    class="thumbnail"/></button>
 						</p>
                         <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
                         <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
                     </div>
                 </div>
             </div>
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>Discord username</h2>
+      </header>
+      <div class="w3-container">
+        <p>Al𝔦𝔤a𝔱𝔢𝔱 ℭo𝔩t#8008</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+</div>
             <footer class="secondary_header footer">
                 <div class="copyright">&copy;2019 - <strong>Davy Verbogt</strong></div>
             </footer>
@@ -136,6 +152,18 @@
             setTimeout(carousel, 25000);
         }
     </script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 
 </html>

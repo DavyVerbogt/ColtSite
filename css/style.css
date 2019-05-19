@@ -60,3 +60,8 @@ ul.sidenav li a {
 	color: #4CAF50;
 	
 }
+@media (min-width: 100px) and (max-width: 600px) {
+	.parallax_description {
+		width: 100%;
+		
+	}
