@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="images/c.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/singlePageTemplate.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -45,9 +45,9 @@
                             <img src="images/DSCF4312.JPG" style="width:100%">
                             <div class="w3-container w3-center">
                                 <p><strong class="foto">Davy Verbogt</strong></p>
-								<p class="foto">29/10/1997</p>
-								<p class="foto"></p>
-								<p class="foto"></p>
+                                <p class="foto">29/10/1997</p>
+                                <p class="foto"></p>
+                                <p class="foto"></p>
                             </div>
                         </div>
                     </aside>
@@ -106,36 +106,39 @@
                         </div>
                     </div>
                     <div class="social" id="contact">
-                        <p class ="social_icon">
-							  <button onclick="document.getElementById('id01').style.display='block'" style="background-color: #414141;"><img src="images/discord-logo-bss.png" width="100" alt=""
-                                    class="thumbnail"/></button>
-						</p>
+                        <p class="social_icon">
+                            <button onclick="document.getElementById('id01').style.display='block'"
+                                style="background-color: #414141;"><img src="images/discord-logo-bss.png" width="100"
+                                    alt="" class="thumbnail" /></button>
+                        </p>
                         <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
                         <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
                     </div>
                 </div>
             </div>
-  <div id="id01" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-large w3-display-topright">&times;</span>
-        <h2>Discord username</h2>
-      </header>
-      <div class="w3-container">
-        <p>Al𝔦𝔤a𝔱𝔢𝔱 ℭo𝔩t#8008</p>
-      </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer>
-    </div>
-  </div>
-</div>
-            <footer class="secondary_header footer">
-                <div class="copyright">&copy;2019 - <strong>Davy Verbogt</strong></div>
-            </footer>
+            <div id="id01" class="w3-modal w3-animate-opacity">
+                <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-large w3-display-topright">&times;</span>
+                        <h2>Discord Username</h2>
+                    </header>
+                    <div class="w3-container">
+                        <div id="users"></div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                        <p></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <footer class="secondary_header footer">
+            <div class="copyright">&copy;2019 - <strong>Davy Verbogt</strong></div>
+        </footer>
         </div>
     </section>
+    <script src="/scripts/DiscordGetter.js"></script>
+    <script src="scripts/aboutus.js"></script>
     <script>
         var myIndex = 0;
         carousel();
@@ -152,17 +155,17 @@
             setTimeout(carousel, 25000);
         }
     </script>
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
