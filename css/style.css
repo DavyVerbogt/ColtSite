@@ -60,8 +60,19 @@ ul.sidenav li a {
 	color: #4CAF50;
 	
 }
+.progressbar{
+    background-color: #4CAF50;
+    color: #414141; 
+}
+.modal{
+    background-color: #4CAF50;
+}
+#users{
+    color: #2c2f33;
+}
 @media (min-width: 100px) and (max-width: 600px) {
 	.parallax_description {
 		width: 100%;
 		
-	}
+    }
+}

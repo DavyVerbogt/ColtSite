@@ -164,7 +164,9 @@ ul li:hover a {
 	float: left;
 	font-family: "Source Sans Pro";
 	color: #343434;
+	padding: 7px;
 	padding-bottom: 15px;
+	
 }
 .noDisplay {
 	display: none;

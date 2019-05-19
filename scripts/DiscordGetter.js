@@ -1,6 +1,4 @@
-let rickID = "151039550234296320"
-let coltID = "195260214491086848"
-var rick;
+ let coltID = "195260214491086848"
 var colt;
 
 var token = "Bot NTYwODEwODUxMjgwNjE3NDky.D35XeQ.fpWplWkDeEys4cioxAPqIp3gHUk" //this is a dummy bot, no use in abusing it
@@ -9,20 +7,10 @@ var url = "https://discordapp.com/api/users/"
 
 
 window.onload = function Start() {
-    rick = new User();
     colt = new User();
 
     
 
-    Getuser(rickID).then(function (data) {
-        rick.full = `${data.username}#${data.discriminator}`;
-        rick.id = data.id;
-        rick.avatar = GetAvatarUrl(data.id, data.avatar);
-        rick.name = data.username
-        rick.discriminator = data.discriminator;
-        console.log(rick);
-       // AddUser(rick);
-    });
     Getuser(coltID).then(function (data) {
         colt.full = `${data.username}#${data.discriminator}`;
         colt.id = data.id;
