@@ -1,42 +1,25 @@
 var data;
 
-function AddAllUserInfo() {
-    httpGetAsync("/commands/about.json", function (raw) {
-        data = JSON.parse(raw);
-
-        ProcessData(data);
-    });
-}
-
- function ProcessData(_data) {
-    for (let index = 0; index < _data.length; index++) {
-        AssembleUser(_data[index].id, Senduser)
-         function Senduser(u) {
-            AddUser(u, _data[index])
-        }
-        //if (index == _data.length - 1) SortDivs();
-    }
-}
-
-function AddUser(user, info) {
+function AddUser(user) {
     users = document.getElementById("users");
+    users.innerHTML = "";
 
     var box = document.createElement('div')
     box.className = "user";
-    box.setAttribute("id", info.p);
+    box.setAttribute("id", user.id);
     users.appendChild(box);
 
     var nameBox = document.createElement('p');
     nameBox.innerHTML = "<b>" + user.full + "</b>"
     box.appendChild(nameBox)
-
+/*
     var jobBox = document.createElement('p');
     jobBox.innerHTML = "<b>Jobs:</b> " + info.jobs
     box.appendChild(jobBox)
 
     var detBox = document.createElement('p');
     detBox.innerHTML = "<b>Detais:</b> " + info.details
-    box.appendChild(detBox)
+    box.appendChild(detBox)*/
 
     var image = document.createElement('img');
     image.src = user.avatar;
@@ -54,4 +37,14 @@ function SortDivs() {
     for (var i = 0; i < divs2.length; i++) {
         cont.appendChild(divs2[i]);
     }
+}
+
+function httpGetAsync(url, callback) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", url, true); // true for asynchronous 
+    xmlHttp.send(null);
 }

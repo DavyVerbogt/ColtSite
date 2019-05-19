@@ -1,4 +1,4 @@
- let coltID = "195260214491086848"
+let coltID = "195260214491086848"
 var colt;
 
 var token = "Bot NTYwODEwODUxMjgwNjE3NDky.D35XeQ.fpWplWkDeEys4cioxAPqIp3gHUk" //this is a dummy bot, no use in abusing it
@@ -17,9 +17,9 @@ window.onload = function Start() {
         colt.avatar = GetAvatarUrl(data.id, data.avatar);
         colt.name = data.username
         colt.discriminator = data.discriminator;
-       // AddUser(colt)
+        AddUser(colt)
     });
-    AddAllUserInfo()
+  //  AddAllUserInfo()
 }
 
 function AssembleUser(id, callback){
