@@ -1,0 +1,62 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background: #2c2f33;
+    margin: 0px;
+}
+
+.Table {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+ul.sidenav li a {
+    text-decoration: none;
+}
+
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+}
+
+ul.sidenav li a {
+    float: left;
+    padding: 15px;
+}
+.foto{
+	color: #717070;
+}
+.What-i-did
+{
+	color: #4CAF50;
+
+}
+.picture-did
+{
+	margin-left: 1px;
+}
+.text{
+	color: #717070;
+}
+.dropdown{
+	background-color: #414141;
+	color: #4CAF50;
+	
+}

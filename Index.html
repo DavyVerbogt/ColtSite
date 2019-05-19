@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Davy Verbogt</title>
+    <link rel="icon" type="image/png" href="images/c.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/singlePageTemplate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="name" id="home">
+        <section class="banner">
+            <h2 class="parallax">PARALLAX HERO</h2>
+            <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </section>
+    </div>
+    <ul class="sidenav">
+        <li><a href="Index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+    </ul>
+    <section class="banner_full">
+        <div class="Table">
+            <br />
+            <div class="container">
+                <div class="responsive-table">
+                    <h2 class="noDisplay">Main Content</h2>
+                    <article class="left_article">
+                        <h3 id="about">About me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </article>
+                    <aside class="right_article">
+                        <div class="w3-card-4" style="width:100%">
+                            <img src="images/DSCF4312.JPG" style="width:100%">
+                            <div class="w3-container w3-center">
+                                <p><strong class="foto">Davy Verbogt</strong></p>
+								<p class="foto">21 years old</p>
+								<p class="foto"></p>
+								<p class="foto"></p>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="row">
+                        <div class="columns">
+                            <p class="thumbnail_align">
+                                <div class="w3-card-4" style="width:100%">
+                                    <img class="mySlides w3-animate-left" src="images/God1.PNG" style="width:100%">
+                                    <img class="mySlides w3-animate-left" src="images/God2.PNG" style="width:100%">
+                                    <div class="w3-container w3-center">
+                                        <p><strong class="What-i-did"><a href="https://godbot.netlify.com/"
+                                                    style="text-decoration: none">GODBOT SITE</strong></p>
+                                    </div>
+                                </div>
+                            </p>
+                            </a>
+                            <p class="text">I have disigned and made this website. it was for a discord bot that my
+                                friend made. You can see the commands and invite the bot on a server with that site. Its
+                                not done yet but we are close.</p>
+                        </div>
+                        <div class="columns">
+                            <p class="thumbnail_align">
+                                <div class="w3-card-4" style="width:100%">
+                                    <img src="images/niks.PNG" style="width:100%">
+                                    <div class="w3-container w3-center">
+                                        <p><strong class="What-i-did"><a href="" style="text-decoration: none">Work In
+                                                    Progres</a></strong></p>
+                                    </div>
+                                </div>
+                            </p>
+                            <p class="text">WORK IN PROGRES</p>
+                        </div>
+                        <div class="columns">
+                            <p class="thumbnail_align">
+                                <div class="w3-card-4" style="width:100%">
+                                    <img src="images/niks.PNG" style="width:100%">
+                                    <div class="w3-container w3-center">
+                                        <p><strong class="What-i-did"><a href="" style="text-decoration: none">Work In
+                                                    Progres</a></strong></p>
+                                    </div>
+                                </div>
+                            </p>
+                            <p class="text">WORK IN PROGRES</p>
+                        </div>
+                        <div class="columns">
+                            <p class="thumbnail_align">
+                                <div class="w3-card-4" style="width:100%">
+                                    <img src="images/niks.PNG" style="width:100%">
+                                    <div class="w3-container w3-center">
+                                        <p><strong class="What-i-did"><a href="" style="text-decoration: none">Work In
+                                                    Progres</a></strong></p>
+                                    </div>
+                                </div>
+                            </p>
+                            <p class="text">WORK IN PROGRES</p>
+                        </div>
+                    </div>
+                    <div class="social" id="contact">
+                        <p class ="social_icon">
+							<img src="images/discord-logo-bss.png" width="100" alt=""
+                                    class="thumbnail"/>
+						</p>
+                        <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
+                        <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="secondary_header footer">
+                <div class="copyright">&copy;2019 - <strong>Davy Verbogt</strong></div>
+            </footer>
+        </div>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 25000);
+        }
+    </script>
+</body>
+
+</html>
