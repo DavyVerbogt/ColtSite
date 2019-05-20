@@ -37,31 +37,38 @@
                     <!--The left acticle-->
                     <article class="left_article">
                         <h3 id="about">About me</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Goodday, My name is Davy Verbogt and i am a enthusiastic guy who loves working with
+                            computers. I have been with computers for quite a while now and i learned myself on how to
+                            build computers. Now i am learning how to code. I realy like the desing asspect of websites
+                            and i made this site myself too. I am trying to learn alot about C# and Java becuse i want
+                            to see how it is to make a game. If there is anything more you want to know about me you can
+                            always send me an email, DavyVerbogt@gmail.com. I hope you have a great day.</p>
                         <p>
                             <!--Skill progressbars-->
-                            <p></p>
+                            <p>Building computers</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge progressbar" style="width:80%"><strong
+                                        class="progressbar">80%</strong></div>
+                            </div>
+                            <p>CSS</p>
                             <div class="w3-light-grey w3-round-xlarge">
                                 <div class="w3-container w3-round-xlarge progressbar" style="width:70%"><strong
-                                        class="progressbar">25%</strong></div>
+                                        class="progressbar">70%</strong></div>
                             </div>
-                            <p></p>
+                            <p>C#</p>
                             <div class="w3-light-grey w3-round-xlarge">
-                                <div class="w3-container w3-round-xlarge progressbar" style="width:25%"><strong
-                                        class="progressbar">25%</strong></div>
+                                <div class="w3-container w3-round-xlarge progressbar" style="width:30%"><strong
+                                        class="progressbar">30%</strong></div>
                             </div>
-                            <p></p>
+                            <p>Java</p>
                             <div class="w3-light-grey w3-round-xlarge">
-                                <div class="w3-container w3-round-xlarge progressbar" style="width:25%"><strong
-                                        class="progressbar">25%</strong></div>
+                                <div class="w3-container w3-round-xlarge progressbar" style="width:35%"><strong
+                                        class="progressbar">35%</strong></div>
                             </div>
-                            <p></p>
+                            <p>JavaScript</p>
                             <div class="w3-light-grey w3-round-xlarge">
-                                <div class="w3-container w3-round-xlarge progressbar" style="width:25%"><strong
-                                        class="progressbar">25%</strong></div>
+                                <div class="w3-container w3-round-xlarge progressbar" style="width:20%"><strong
+                                        class="progressbar">20%</strong></div>
                             </div>
 
                         </p>
@@ -144,8 +151,7 @@
                                 style="background-color: #414141;"><img src="images/discord-logo-bss.png" width="100"
                                     alt="" class="thumbnail" /></button>
                         </p>
-                        <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
-                        <p class="social_icon"><img src="" width="100" alt="" class="thumbnail" /></p>
+                        <p class="social_icon"><a href="https://www.twitch.tv/colt_senpai"><img src="images/twitch.png" width="100" alt="Colt_Sen Twitch" class="thumbnail" /></a></p>
                     </div>
                 </div>
             </div>
@@ -159,6 +165,8 @@
                     </header>
                     <div class="w3-container modal-inside">
                         <div id="users"></div>
+                        <a class="notactive button" type="button" id="startButton" onclick="openInNewTab()">Join my
+                            Livestream Comunity server</a>
                     </div>
                     <footer class="w3-container modal">
                         <p></p>
@@ -218,7 +226,7 @@
         jQuery(document).ready(function () {
             jQuery('.progressbar').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated w3-animate-left',
-                offset: 10
+                offset: 20
             });
         });
     </script>
@@ -227,7 +235,7 @@
         jQuery(document).ready(function () {
             jQuery('.1').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated w3-animate-left',
-                offset: 10
+                offset: 40
             });
         });
     </script>
@@ -235,7 +243,7 @@
         jQuery(document).ready(function () {
             jQuery('.2').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated w3-animate-left',
-                offset: 10
+                offset: 40
             });
         });
     </script>
@@ -243,7 +251,7 @@
         jQuery(document).ready(function () {
             jQuery('.3').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated w3-animate-right',
-                offset: 10
+                offset: 40
             });
         });
     </script>
@@ -251,7 +259,7 @@
         jQuery(document).ready(function () {
             jQuery('.4').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated w3-animate-right',
-                offset: 10
+                offset: 40
             });
         });
     </script>
@@ -268,6 +276,11 @@
             let secs = (Date.now() / 1000) - time;
             let years = secs / 31556926;
             return Math.floor(years);
+        }
+    </script>
+    <script>
+        function openInNewTab(url = "https://discord.gg/84kXWKW") {
+            window.open(url, '_blank');
         }
     </script>
 
