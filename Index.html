@@ -72,7 +72,7 @@
                             <img src="images/DSCF4312.JPG" style="width:100%">
                             <div class="w3-container w3-center">
                                 <p><strong class="foto">Davy Verbogt</strong></p>
-                                <p class="foto">29/10/1997</p>
+                                <p class="foto" id="birthday">29/10/1997</p>
                                 <p class="foto"></p>
                                 <p class="foto"></p>
                             </div>
@@ -258,10 +258,8 @@
     <!--Birthday calculator-->
     <script>
         const Birthday = 878083200;
-        const BirthDate = new Date('29 ocktober 1997');
-
-        UnixToYears(Birthday);
-
+        var bday = document.getElementById("birthday");
+        bday.innerHTML = `${UnixToYears(Birthday)} Years old`;
 
         Date.prototype.getUnixTime = function () { return this.getTime() / 1000 | 0 };
 

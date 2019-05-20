@@ -12,14 +12,14 @@ function AddUser(user) {
     var nameBox = document.createElement('p');
     nameBox.innerHTML = "<b>" + user.full + "</b>"
     box.appendChild(nameBox)
-/*
-    var jobBox = document.createElement('p');
-    jobBox.innerHTML = "<b>Jobs:</b> " + info.jobs
-    box.appendChild(jobBox)
 
-    var detBox = document.createElement('p');
-    detBox.innerHTML = "<b>Detais:</b> " + info.details
-    box.appendChild(detBox)*/
+    /*var jobBox = document.createElement('p');
+     jobBox.innerHTML = "<b>Jobs:</b> " + info.jobs
+     box.appendChild(jobBox)
+ 
+     var detBox = document.createElement('p');
+     detBox.innerHTML = "<b>Detais:</b> " + info.details
+     box.appendChild(detBox)*/
 
     var image = document.createElement('img');
     image.src = user.avatar;
@@ -33,7 +33,7 @@ function SortDivs() {
     var divs = cont.querySelectorAll('div');
     var divs2 = [];
     divs2 = Array.from(divs);
-    divs2.sort(function (a, b) {return b - a;});
+    divs2.sort(function (a, b) { return b - a; });
     for (var i = 0; i < divs2.length; i++) {
         cont.appendChild(divs2[i]);
     }
