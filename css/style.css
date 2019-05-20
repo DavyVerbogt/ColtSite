@@ -13,6 +13,8 @@ body {
 }
 
 ul.sidenav {
+    position:relative; 
+    z-index:10;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -67,8 +69,17 @@ ul.sidenav li a {
 .modal{
     background-color: #4CAF50;
 }
+.modal-inside{
+    background-color: #2c2f33;
+}
 #users{
     color: #2c2f33;
+}
+.hidden{
+    opacity:0;
+}
+.visible{
+    opacity:1;
 }
 @media (min-width: 100px) and (max-width: 600px) {
 	.parallax_description {
