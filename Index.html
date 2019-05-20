@@ -237,7 +237,7 @@
     <script>
         jQuery(document).ready(function () {
             jQuery('.2').addClass("hidden").viewportChecker({
-                classToAdd: 'visible animated w3-animate-bottom',
+                classToAdd: 'visible animated w3-animate-left',
                 repeat: true,
                 offset: 10
             });
@@ -246,7 +246,7 @@
     <script>
         jQuery(document).ready(function () {
             jQuery('.3').addClass("hidden").viewportChecker({
-                classToAdd: 'visible animated w3-animate-bottom',
+                classToAdd: 'visible animated w3-animate-right',
                 repeat: true,
                 offset: 10
             });
@@ -260,6 +260,23 @@
                 offset: 10
             });
         });
+    </script>
+    <!--Birthday calculator-->
+    <script>
+        const Birthday = 878083200;
+        const BirthDate = new Date('29 ocktober 1997');
+
+        UnixToYears(Birthday);
+
+
+        Date.prototype.getUnixTime = function () { return this.getTime() / 1000 | 0 };
+
+        function UnixToYears(time) {
+            if (typeof time !== "number") time = time.getUnixTime();
+            let secs = (Date.now() / 1000) - time;
+            let years = secs / 31556926;
+            return Math.floor(years);
+        }
     </script>
 
 </body>
