@@ -14,23 +14,27 @@
 </head>
 
 <body>
+    <!--Paralax-->
     <div class="name" id="home">
         <section class="banner">
             <h2 class="parallax">DAVY</h2>
             <p class="parallax_description">A website about me and what i made.</p>
         </section>
     </div>
+    <!--Menu-->
     <ul class="sidenav">
         <li><a href="Index.html">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li> <a href="#contact">CONTACT</a></li>
     </ul>
+    <!--Full banner of right and left article-->
     <section class="banner_full">
         <div class="Table">
             <br />
             <div class="container">
                 <div class="responsive-table">
                     <h2 class="noDisplay">Main Content</h2>
+                    <!--The left acticle-->
                     <article class="left_article">
                         <h3 id="about">About me</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -38,6 +42,7 @@
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <p>
+                            <!--Skill progressbars-->
                             <p></p>
                             <div class="w3-light-grey w3-round-xlarge">
                                 <div class="w3-container w3-round-xlarge progressbar" style="width:70%"><strong
@@ -61,6 +66,7 @@
 
                         </p>
                     </article>
+                    <!--Right article with my picture-->
                     <aside class="right_article">
                         <div class="w3-card-4" style="width:100%">
                             <img src="images/DSCF4312.JPG" style="width:100%">
@@ -72,8 +78,10 @@
                             </div>
                         </div>
                     </aside>
+                    <!--Things i have done-->
                     <div class="row">
                         <div class="columns 1">
+                            <!--Hikage bot site-->
                             <p class="thumbnail_align">
                                 <div class="w3-card-4" style="width:100%">
                                     <img class="mySlides w3-animate-left" src="images/God1.PNG" style="width:100%">
@@ -85,11 +93,12 @@
                                 </div>
                             </p>
                             </a>
-                            <p class="text">I have disigned and made this website. it was for a discord bot that my
+                            <p class="text">I have disigned and made this website. It was for a discord bot that my
                                 friend made. You can see the commands and invite the bot on a server with that site. Its
                                 not done yet but we are close.</p>
                         </div>
                         <div class="columns 2">
+                            <!--WORK IN PROGRESS-->
                             <p class="thumbnail_align">
                                 <div class="w3-card-4" style="width:100%">
                                     <img src="images/niks.PNG" style="width:100%">
@@ -102,6 +111,7 @@
                             <p class="text">WORK IN PROGRES</p>
                         </div>
                         <div class="columns 3">
+                            <!--WORK IN PROGRESS-->
                             <p class="thumbnail_align">
                                 <div class="w3-card-4" style="width:100%">
                                     <img src="images/niks.PNG" style="width:100%">
@@ -114,6 +124,7 @@
                             <p class="text">WORK IN PROGRES</p>
                         </div>
                         <div class="columns 4">
+                            <!--WORK IN PROGRESS-->
                             <p class="thumbnail_align">
                                 <div class="w3-card-4" style="width:100%">
                                     <img src="images/niks.PNG" style="width:100%">
@@ -126,6 +137,7 @@
                             <p class="text">WORK IN PROGRES</p>
                         </div>
                     </div>
+                    <!--My social media like discord-->
                     <div class="social" id="contact">
                         <p class="social_icon">
                             <button onclick="document.getElementById('id01').style.display='block'"
@@ -137,6 +149,7 @@
                     </div>
                 </div>
             </div>
+            <!--Discord Modal-->
             <div id="id01" class="w3-modal w3-animate-opacity">
                 <div class="w3-modal-content w3-card-4">
                     <header class="w3-container modal">
@@ -153,13 +166,16 @@
                 </div>
             </div>
         </div>
+        <!--Footer of the page-->
         <footer class="secondary_header footer">
             <div class="copyright">&copy;2019 - <strong>Davy Verbogt</strong></div>
         </footer>
         </div>
     </section>
+    <!--Scripts for the discord username-->
     <script src="/scripts/DiscordGetter.js"></script>
     <script src="scripts/aboutus.js"></script>
+    <!--Image slideshow-->
     <script>
         var myIndex = 0;
         carousel();
@@ -176,6 +192,7 @@
             setTimeout(carousel, 25000);
         }
     </script>
+    <!--Modal you can close by just clicking at the side-->
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
@@ -187,6 +204,7 @@
             }
         }
     </script>
+    <!--Scroll animation Right article-->
     <script>
         jQuery(document).ready(function () {
             jQuery('.right_article').addClass("hidden").viewportChecker({
@@ -196,6 +214,7 @@
             });
         });
     </script>
+    <!--Scroll animation Progressbar-->
     <script>
         jQuery(document).ready(function () {
             jQuery('.progressbar').addClass("hidden").viewportChecker({
@@ -205,6 +224,7 @@
             });
         });
     </script>
+    <!--Scroll animation for the things i have tone 1 to 4-->
     <script>
         jQuery(document).ready(function () {
             jQuery('.1').addClass("hidden").viewportChecker({
